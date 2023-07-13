@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+body{
+    overflow-x: hidden;
+    
+    
+}
+header{
+    background-image: url("../image/black-square.jpg");
+    background-size: cover;
+    color: #FFF;
+    height:fit-content;
+}
+
+.faculty{
+    font-size: 20px;
+    color: #ffffff80;
+}
+img{
+    border-radius: 10px;
+    width: 220px;
+    height: 180px;
+    
+}
+ul{
+    padding-top: 20px;
+    padding-left: 0 !important;
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    list-style: none;
+}
+li{
+    border-right: 1px solid #bfbebe;
+    padding: 0 40px;;
+} 
+li:last-child{border: none;}
+li:first-child{padding: 0 40px 0 0 ;}
+li span{
+    font-weight: bold;
+    font-size: 22px;
+}
+li p{
+    color: #ffffff80;
+}
+
+/*start Service Section*/
+.service{
+    background-color: #0d0d0df0;
+    color: #FFF;
+    
+}
+.service-title{
+    font-size: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #1e00c6;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+.service-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.service-box{
+    border: 1px solid #bfbebe;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+}
+.service-container img{
+    width: 80%;
+    height: 250px;
+} 
+.service-container h5{
+    padding: 10px;
+} 
+.service-container a{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-evenly;
+    color: #FFF;
+    padding-top: 20px;
+} 
+/*Responsive*/
+@media(max-width:1199px) {
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .image-container{
+        padding: 0 !important;
+    }
+}
+@media(max-width:991px) {
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .image-container{
+        padding: 0 !important;
+    }
+    .service-container{
+        flex-direction: column;
+    } 
+}
+@media(max-width:767px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    ul{
+        flex-direction: column;
+    }
+    ul li{
+        border-bottom: 1px solid #bfbebe;
+        border-right: 0;
+        text-align: center;
+        padding: 10px;
+    }
+    ul li:first-child{ padding: 10px;}
+    .image-container{
+        padding: 0 !important;
+    }
+    .service-container{
+        flex-direction: column;
+    } 
+}
